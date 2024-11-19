@@ -1,0 +1,7 @@
+<h1>Users</h1>
+
+<ul>
+  <% @users.each do |user| %>
+    <li>Name: <%= user.name %>, Email: <%= user.email %>, Age: <%= user.age %> <%= link_to 'Show', user_path(user) %></li>
+  <% end %>
+</ul>
